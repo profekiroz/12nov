@@ -28,8 +28,9 @@ $(document).ready(function(e){
 			navigator.notification.confirm("Que quieres hacer ?",function(opt){
 				switch(opt){
 					case 1:
-					break;
 					navigator.notification.beep(3);
+					break;
+					
 					case 2:	
 					navigator.notification.vibrate(500);				
 					break;
