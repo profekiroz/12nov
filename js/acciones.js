@@ -29,9 +29,9 @@ $(document).ready(function(e){
 				switch(opt){
 					case 1:
 					break;
-					
-					case 2:
-					
+					navigator.notification.beep(3);
+					case 2:	
+					navigator.notification.vibrate(500);				
 					break;
 				}// switch opt
 			},"Prueba4","Beep,Vibrar,Cancelar");//confirm
