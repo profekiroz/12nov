@@ -7,6 +7,7 @@ $(document).ready(function(){
 		$('#disp table td').eq(5).text(device.version);	
 		$('#disp table td').eq(7).text(device.cordova);
 		$('#disp table td').eq(9).text(device.uuid);	
+	
 	document.addEventListener("pause",function(){
 		escribehistoria('La app se pauso');
 	},false);
@@ -25,5 +26,5 @@ $(document).ready(function(){
 });//ready
 
 function escribehistoria(accion){
-	$('#ehistoria').append('<li>' + accion + '</li>');
+	$('#ehistoria').append('<li>'+accion+'</li>');
 }
